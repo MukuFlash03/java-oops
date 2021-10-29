@@ -1,0 +1,8 @@
+<!DOCTYPE transact1 SYSTEM "transact1.dtd">
+<transact1>
+    <cardNo>248613579</cardNo>
+    <cardType>debit</cardType>
+    <transactionAmt>1500</transactionAmt>
+    <email>abc@xyz.com</email>
+    <name>Max</name>
+</transact1>

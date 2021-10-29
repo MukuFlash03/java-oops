@@ -1,0 +1,25 @@
+<!DOCTYPE customers  SYSTEM "customer1.dtd">
+<customers>
+    <customer custid="101" type="classic" client="amazon">
+        <id>101</id>
+        <cname>Albin</cname>
+        <gender>Male</gender>
+        <address>Bangalore</address>
+    </customer>
+
+    <customer custid="102" refered="103" type="premium" client="amazon">
+        <id>102</id>
+        <name>Abay</cname>
+        <gender>Male</gender>
+        <address>Mumbai</address>
+    </customer>
+
+    <!-- Classic customer is default unless required field-->
+    <customer custid="103" referedBy="102" type="classic">
+        <id>103</id>
+        <cname>Ashana</cname>
+        <gender>Female</gender>
+        <address>Bangalore</address>
+    </customer>
+
+</customers>

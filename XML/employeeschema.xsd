@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="employees" type="tns:emps"></xs:element>
+    
+
+    <complexType name="emps">
+        <sequence>
+            <xs:element name="employee" type="tns:emp" minOccurs="3" maxOccurs="10"></xs:element>
+        </sequence>
+    </complexType>
+
+    <complexType name="emp">
+        <sequence>
+            <xs:element name="id" type="integer"></xs:element>
+            <xs:element name="name" type="string"></xs:element>
+            <xs:element name="email" type="string"></xs:element>
+            <xs:element name="gender" type="string"></xs:element>
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="Male"></enumeration>
+                        <enumeration value="Female"></enumeration>
+                    </restriction>
+                </simpleType>
+            <xs:element name="age" type="integer"></xs:element>
+                <simpleType>
+                    <restriction base="integer">
+                        <maxInclusive value="60"></maxInclusive>
+                        <minInclusive value="0"></minInclusive>
+                    </restriction>
+                </simpleType>
+            <xs:element name="phoneNo" type="integer"></xs:element>
+        </sequence>
+    </complexType>
+</xs:schema>

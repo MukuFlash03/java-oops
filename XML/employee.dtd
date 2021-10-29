@@ -1,0 +1,11 @@
+<!ELEMENT employees(employee*)>
+<!ELEMENT employee(fname, lname, (email|mailid))>
+<!ELEMENT fname(#PCDATA)>
+<!ELEMENT lname(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT mailid(#PCDATA)>
+
+<!ATLIST employee empId ID #REQUIRED>
+<!ATLIST employee gender (Male|Female) "Female">
+<!ATLIST employee refered IDREFS #IMPLIED>
+<!ATLIST employee referedBy IDREF #IMPLIED>

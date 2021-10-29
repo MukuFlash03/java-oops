@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="message" type="tns:msg"></xs:element>
+
+    <complexType name="msg">
+        <sequence>
+            <xs:element name="from" type="string"></xs:element>
+            <xs:element name="to" type="string"></xs:element>
+            <xs:element name="body" type="string"></xs:element>
+        </sequence>
+    </complexType>
+</xs:schema>

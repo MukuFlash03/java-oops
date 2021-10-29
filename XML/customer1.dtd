@@ -1,0 +1,11 @@
+<!ELEMENT customers(customer*)>
+<!ELEMENT customer(id, (cname|name), gender, address)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT cname(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT gender(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ATLIST customer type CDATA "classic" #REQUIRED #IMPLIED>
+<!ATLIST customer client CDATA "amazon" #FIXED>
+<!ATLIST customer custid ID #REQUIRED>
+<!ATLIST customer custref IDREF #IMPLIED>

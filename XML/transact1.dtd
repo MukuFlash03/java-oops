@@ -1,0 +1,6 @@
+<!ELEMENT customer(cardNo, cardType, transactionAmt, email, name)>
+<!ELEMENT cardNo(#PCDATA)>
+<!ELEMENT cardType(#PCDATA)>
+<!ELEMENT transactionAmt(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT name(#PCDATA)>

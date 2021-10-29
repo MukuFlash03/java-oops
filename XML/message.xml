@@ -1,0 +1,5 @@
+<message xmlns="http://www.example.org/mail" xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+    <from>from</from>
+    <to>to</to>
+    <body>body</body>
+</message>

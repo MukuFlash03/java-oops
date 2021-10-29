@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employee.dtd">
+<employees>
+	<employee empId="_101" refered="_102 _103" gender="Male">
+		<fname>A</fname>
+		<lname>B</lname>
+		<email>A@oracle.com</email>
+	</employee>
+	
+	<employee empId="_102" referedBy="_101" gender="Female">
+		<fname>A</fname>
+		<lname>B</lname>
+		<mailid>A@oracle.com</mailid>
+	</employee>
+	
+	<employee empId="_103" refered="_104" referedBy="_101" gender="Male">
+		<fname>A</fname>
+		<lname>B</lname>
+		<mailid>A@oracle.com</mailid>
+	</employee>
+
+	<employee empId="_104" refered="_105" gender="Female">
+		<fname>A</fname>
+		<lname>B</lname>
+		<email>A@oracle.com</email>
+	</employee>
+	<employee empId="_105" referedBy="104" gender="Female">
+		<fname>A</fname>
+		<lname>B</lname>
+		<email>A@oracle.com</email>
+	</employee>
+</employees>
+<!--  
+   Employees has 0 or more employees
+   each emp has email or mailid elements
+    each emp has unique empid  attribute its mandatory
+   optionally refered and referedBy attribute to be declared in each employee element
+   refered type  is IDREF and referedBy type is IDREFS
+ -->
