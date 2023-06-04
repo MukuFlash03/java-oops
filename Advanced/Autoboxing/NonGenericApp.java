@@ -11,7 +11,7 @@ public class NonGenericApp {
         String myCity = (String) myData1.getData();
         System.out.println(myCity);
 
-        int myLuckyNo = (Integer) myData1.getData();
+        int myLuckyNo = (Integer) myData2.getData();
         System.out.println(myLuckyNo);
     }
 }
